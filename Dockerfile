@@ -8,8 +8,7 @@ RUN apk --update add \
       wget \
       bash &&\
       pip install --no-cache-dir --upgrade awscli &&\
-      rm -rf /var/cache/apk/* \
-      mkdir /root/.aws
+      rm -rf /var/cache/apk/*
 
 COPY etcd-aws-cluster /etcd-aws-cluster
 
